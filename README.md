@@ -2,14 +2,14 @@
 
 Converts C function definitions to Rust. Use this tool to help in the creation of foreign function interfaces.
 
-# Pros
+## Pros
 * super simple
 ```sh
 $ ./c2rust.py "int foo(const char *s, unsigned long len)"
 pub fn foo(s: *const c_char, len: c_ulong) -> c_int;
 ```
 
-# Cons
+## Cons
 
 Does not handle:
 * C preprocessor instructions
@@ -20,7 +20,7 @@ Does not handle:
 
 For a more sophisticated tool take a look at [rust-bindgen](https://github.com/crabtw/rust-bindgen).
 
-# Usage
+## Usage
 ```sh
 $ ./c2rust.py --help
 usage: c2rust.py [-h] [-f PATH] [-s] [-c] [cfunctions]
