@@ -18,7 +18,7 @@ Does not handle:
 * variadic functions
 * ...
 
-For a more sophisticated tool take a look at [rust-bindgen](https://github.com/crabtw/rust-bindgen).
+For a more sophisticated tool take a look at [rust-bindgen](https://github.com/servo/rust-bindgen).
 
 ## Usage
 ```sh
